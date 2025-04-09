@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital search</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="google-label">Google</div>
+ 
+  <div class="overlay">
+    <div class="clock-container">
+      <div class="time" id="time"></div>
+      <div class="date" id="date"></div>
+
+      <!-- Voice Status -->
+      <div id="voiceStatus" class=" hidden">🎤 Listening...</div>
+
+      
+      <!-- Google Search Bar -->
+<form action="https://www.google.com/search" method="GET" target="_blank" class="search-bar">
+    <!-- Make sure input has an ID to be accessed in JavaScript -->
+    <input type="text" id="searchInput" name="q" placeholder="Search Google..." />
+  
+    <!-- Submit button -->
+    <button type="click">🔍</button>
+  
+    <!-- Voice search button -->
+    <button type="button" id="mic-button" class="mic-btn">🎙️</button>
+  </form>
+  
+    </div>
+  </div>
+  <!-- Shortcuts Section -->
+<div class="shortcuts">
+    <a href="https://github.com/" target="_blank" class="shortcut">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"/>
+      <span>GitHub</span>
+    </a>
+    <a href="https://chatgpt.com/" target="_blank" class="shortcut">
+      <img src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1hfai7qheevl14ohqq7efgpvd1h.png" alt="ChatGPT"/>
+      <span>ChatGPT</span>
+    </a>
+    <a href="https://chat.deepseek.com/" target="_blank" class="shortcut">
+      <img src="https://cdn.deepseek.com/logo.png?x-image-process=image%2Fresize%2Cw_1920" alt="DeepSeek"/>
+      <span>DeepSeek</span>
+    </a>
+    <a href="https://leetcode.com/" target="_blank" class="shortcut">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode"/>
+      <span>LeetCode</span>
+    </a>
+    <a href="https://www.youtube.com/" target="_blank" class="shortcut">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"/>
+      <span>YouTube</span>
+    </a>
+    <a href="https://mail.google.com/" target="_blank" class="shortcut">
+      <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail"/>
+      <span>Gmail</span>
+    </a>
+    <a href="https://www.facebook.com/" target="_blank" class="shortcut">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook"/>
+      <span>Facebook</span>
+    </a>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

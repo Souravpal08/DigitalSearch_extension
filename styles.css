@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('image.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+  }
+  
+  .clock-container {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 30px 50px;
+    border-radius: 25px;
+    
+    box-shadow: 0 0 40px #a020f0, 0 0 80px #a020f099;
+
+  }
+  
+  .time {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #222;
+    color: white;
+  }
+  
+  .search-bar button {
+    padding: 10px 15px;
+    background-color: #a020f0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* 🆕 Shortcut styles - placed outside overlay */
+  .shortcuts {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .shortcut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffffcc;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .shortcut img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 6px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #a020f0;
+    background-color: #00000080;
+    padding: 10px;
+  }
+  
+  .shortcut span {
+    font-size: 0.9rem;
+    margin-top: 2px;
+  }
+  
+  .shortcut:hover {
+    transform: scale(1.1);
+    color: #a020f0;
+  }
+
+  .shortcuts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 90%;
+  }
+
+  /*style for Google*/
+
+  .google-label {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(160, 32, 240, 0.8);
+  margin-top: 20px;
+ 
+}
+
+.google-label {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(160, 32, 240, 0.8);
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    background-color: #a020f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .mic-btn {
+    background-color: #333;
+    margin-top: px;
+    background-color: #1e1e2f;
+    border: none;
+    color: #a020f0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 50%;
+    padding: 10px 15px;
+    box-shadow: 0 0 15px rgba(160, 32, 240, 0.3);
+  }
+ 
+  /*For voice status*/
+  #voiceStatus {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(80, 0, 130, 0.7);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 0 20px 5px #a855f7;
+    backdrop-filter: blur(6px);
+    border: 1px solid #a855f7;
+    display: none; /* hidden by default */
+    z-index: 1000;
+  }
+  
+  #voiceStatus.show {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+  }
+  
+  
