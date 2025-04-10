@@ -6,9 +6,12 @@ function digitalClock() {
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const seconds = now.getSeconds().toString().padStart(2, '0');
     const timeString = `${hours}:${minutes}:${seconds}`;
-  
-    const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-    const dateString = now.toLocaleDateString(undefined, options);
+    
+
+    const day = now.getDate().toString().padStart(2, '0');
+    const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Months are zero-based
+    const year = now.getFullYear();
+    const dateString = `${day} / ${month} / ${year} `
   
     document.getElementById('time').textContent = timeString;
     document.getElementById('date').textContent = dateString;
